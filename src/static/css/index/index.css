@@ -1,7 +1,77 @@
+.white {
+  color: #fff;
+}
+.m_auto {
+  margin: 0 auto;
+}
+.m_center {
+  text-align: center;
+}
 .pz_center {
   width: 80%;
   height: 100%;
   margin: 0 auto;
+}
+span.button_c.more {
+  display: inline-block;
+  width: 13em;
+  height: 4em;
+  background: #c0a976;
+  border-radius: .5em;
+  line-height: 4em;
+  text-align: center;
+  font-size: 18px;
+}
+a {
+  text-decoration: none;
+}
+li > a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none!important;
+  color: red!important;
+  cursor: pointer;
+}
+a.title_line {
+  font-size: 36px;
+  color: #ab885b;
+  display: inline-block;
+  height: 2em;
+  width: 5em;
+  line-height: 2em;
+  margin: 0 auto;
+  position: relative;
+}
+a.title_line:before {
+  content: '';
+  height: 1px;
+  width: 100%;
+  background: red;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+a.title_line:after {
+  content: '';
+  height: 3px;
+  width: 20%;
+  background: red;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  margin: 0 auto;
+}
+a.title_line:hover:after {
+  width: 50%;
+  transform: scale(1.5 1.5);
+  transition: all .8s;
 }
 .header {
   height: 7.14em;
@@ -84,13 +154,18 @@ section .strength ul li a {
   text-decoration: none;
 }
 section #main {
-  height: 3000px;
+  height: 6000px;
   padding-bottom: 6.8em;
   background: #e1dfcb;
 }
 section #main .pz_center {
   background: #eeefe4;
   box-shadow: 8px 5px 5px #d3cccc, -8px 0px 5px #d3cccc;
+}
+section #main .pz_center > .item {
+  width: 85em;
+  margin: 0 auto;
+  text-align: center;
 }
 section #main .pz_center .theme .theme_item ul {
   overflow: hidden;
@@ -119,6 +194,85 @@ section #main .pz_center .theme .theme_item li img {
 section #main .pz_center .theme .theme_item li div.text {
   height: 5em;
 }
+section #main .pz_center .moreTheme {
+  margin-top: 7.15em;
+}
+section #main .pz_center .moreTheme .video {
+  width: 85em;
+  height: 45em;
+  margin: 0 auto;
+  background: #b3b3b3;
+  position: relative;
+}
+section #main .pz_center .moreTheme .video img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+section #main .pz_center .moreTheme .video video {
+  width: 100%;
+}
+section #main .pz_center .months {
+  margin-top: 5em;
+  text-align: center;
+}
+section #main .pz_center .months li {
+  margin-bottom: 1em;
+}
+section #main .pz_center .months li img {
+  width: 100%;
+}
+section #main .pz_center .months li .text {
+  text-align: center;
+  background: #c0a976;
+  height: 3em;
+  line-height: 3em;
+  color: #fff;
+  font-weight: bolder;
+  font-size: 22px;
+}
+section #main .pz_center .months ul {
+  margin-bottom: 5em;
+}
+section #main .pz_center .months span.more {
+  display: inline-block;
+  width: 13em;
+  height: 4em;
+  background: #c0a976;
+  border-radius: .5em;
+  line-height: 4em;
+  text-align: center;
+  font-size: 18px;
+}
+section #main .pz_center .shops .landmarks li {
+  height: 7em;
+  border-bottom: 1px solid #1a1a17;
+  border-right: 1px solid #1a1a17;
+  padding: .8em;
+  box-sizing: border-box;
+}
+section #main .pz_center .shops .landmarks li > span {
+  margin-left: 1em;
+  font-size: 18px;
+}
+section #main .pz_center .shops .landmarks li:nth-child(9) {
+  border-bottom: none;
+}
+section #main .pz_center .shops .landmarks li:nth-child(10) {
+  border-bottom: none;
+}
+section #main .pz_center .shops .landmarks li:nth-child(11) {
+  border-bottom: none;
+}
+section #main .pz_center .shops .landmarks li:nth-child(12) {
+  border-bottom: none;
+  border-right: none;
+}
 footer .title {
   height: 4.28em;
   background: #444;
@@ -134,12 +288,39 @@ footer .title ul li {
   text-align: center;
   line-height: 4.28em;
   overflow: hidden;
+  position: relative;
 }
 footer .title ul li a {
   color: #ccc;
   text-decoration: none;
 }
+footer .title ul li:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  height: 2px;
+  background: #c0a977;
+  transition: .2s;
+  transform: translateX(-100%);
+}
+footer .title ul li:first:after {
+  content: '';
+  height: 0px;
+  background: transparent;
+}
+footer .title ul li:hover:after {
+  left: 0;
+  transform: translateX(0);
+}
 footer .content {
   height: 31.78em;
   background: #1a1a1a;
+}
+footer .bottom {
+  height: 7.9em;
+  background: #000;
+  color: #fff;
+  line-height: 7.9em;
 }
