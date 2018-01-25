@@ -37,6 +37,9 @@ a:hover {
   color: red!important;
   cursor: pointer;
 }
+a.underline {
+  border-bottom: 4px solid red;
+}
 a.title_line {
   font-size: 36px;
   color: #ab885b;
@@ -276,7 +279,7 @@ section #main .pz_center .shops .landmarks li:nth-child(12) {
 footer .title {
   height: 4.28em;
   background: #444;
-  font-size: 1.3em;
+  font-size: 1em;
 }
 footer .title ul {
   overflow: hidden;
@@ -319,8 +322,9 @@ footer .content {
   background: #1a1a1a;
 }
 footer .bottom {
-  height: 7.9em;
+  height: 110px;
   background: #000;
   color: #fff;
-  line-height: 7.9em;
+  line-height: 110px;
+  font-size: 18px;
 }

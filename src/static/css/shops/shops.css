@@ -1,0 +1,47 @@
+body > .contact {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 4em;
+  height: 18em;
+  background: #353535;
+}
+body > .contact ul {
+  height: 100%;
+}
+body > .contact ul li {
+  height: 20%;
+  font-size: 12px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #bdbdbd;
+  border-bottom: 2px solid #505050;
+  cursor: pointer;
+}
+body > .contact ul li div {
+  line-height: 1em;
+}
+body > .contact ul li:hover {
+  background: #272222;
+}
+body > .contact ul li:before {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 60%;
+  background: url('../../img/index/qq.png') no-repeat center / 40% 70%;
+}
+body > .contact ul li:nth-child(2):before {
+  background: url('../../img/index/tianmao.png') no-repeat center / 40% 70%;
+}
+body > .contact ul li:nth-child(3):before {
+  background: url('../../img/index/weixin.png') no-repeat center / 40% 70%;
+}
+body > .contact ul li:nth-child(4):before {
+  background: url('../../img/index/weibo.png') no-repeat center / 40% 70%;
+}
+body > .contact ul li:nth-child(5):before {
+  background: url('../../img/index/top.png') no-repeat center / 30% 40%;
+}
