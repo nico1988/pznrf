@@ -92,7 +92,7 @@ a.title_line:hover:after {
 }
 .header .content ul {
   position: absolute;
-  left: 13.6em;
+  left: 20em;
   top: 0;
   width: 80%;
   overflow: hidden;
@@ -135,6 +135,9 @@ a.title_line:hover:after {
 .header .content ul li:hover:after {
   left: 0;
   transform: translateX(0);
+}
+.header .content ul li:first-of-type {
+  visibility: hidden;
 }
 section #banner {
   height: 62.15em;

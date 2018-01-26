@@ -25,11 +25,13 @@ body {
   margin-top: -7.14em;
   background-color: #ceb370;
   background: url('../../img/login/bj.png') no-repeat fixed center / 100% 100%;
+  background-size: 100% 100%;
   position: relative;
 }
 .login_main .login_part:hover {
   box-shadow: 3px 3px 10px #afafaf, -3px -3px 10px #afafaf;
   transform: translateY(-0.3em);
+  background: rgba(255, 255, 255, 0.8);
   transition: all .6s;
 }
 .login_main .login_part {
@@ -143,4 +145,10 @@ body {
   background: -webkit-linear-gradient(top, #c21313, #ddd6c8);
   background: linear-gradient(top, #c21313, #ddd6c8);
   background: #675a38;
+}
+@media screen and (max-width: 960px) {
+  .login_part {
+    right: 0!important;
+    left: 0;
+  }
 }

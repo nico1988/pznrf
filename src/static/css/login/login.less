@@ -30,10 +30,12 @@ html,body{
     margin-top:-7.14em;
     background-color: @login_head_color;
     background: url('../../img/login/bj.png') no-repeat fixed center/100% 100%;
+    background-size:100% 100%;
     position: relative;
     .login_part:hover{
         box-shadow:3px 3px 10px rgb(175, 175, 175),-3px -3px 10px rgb(175, 175, 175);
         transform: translateY(-.3em);
+        background: rgba(255, 255, 255,.8);
         transition: all .6s;
     }
     .login_part{
@@ -149,5 +151,11 @@ html,body{
                 background: @login_head_color*.5;
             }
         }
+    }
+}
+@media screen and (max-width: 960px) {
+    .login_part {
+        right: 0!important;
+        left:0;
     }
 }
