@@ -12,6 +12,12 @@
   height: 100%;
   margin: 0 auto;
 }
+.red {
+  color: red;
+}
+span.button_c.more:hover {
+  background: rgba(192, 169, 118, 0.6);
+}
 span.button_c.more {
   display: inline-block;
   width: 13em;
@@ -21,6 +27,8 @@ span.button_c.more {
   line-height: 4em;
   text-align: center;
   font-size: 18px;
+  cursor: pointer;
+  margin: 2em;
 }
 a {
   text-decoration: none;
@@ -47,7 +55,7 @@ a.title_line {
   height: 2em;
   width: 5em;
   line-height: 2em;
-  margin: 0 auto;
+  margin: 1em auto;
   position: relative;
 }
 a.title_line:before {
@@ -147,20 +155,45 @@ section .strength {
   height: 10.7em;
   background: #c0a977;
   overflow: hidden;
+  color: #fff;
+  font-size: 14px;
+}
+section .strength ul {
+  margin-top: 1.5em;
+  padding: 0 2em;
+  box-sizing: border-box;
+}
+section .strength ul li:before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  background: #fff;
+  height: 60%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+section .strength ul li:last-child:before {
+  background: transparent;
 }
 section .strength ul li {
+  position: relative;
+  padding: 1em;
   float: left;
   height: 10.7em;
   width: 25%;
   text-align: center;
   overflow: hidden;
+  box-sizing: border-box;
+}
+section .strength ul li h4 {
+  text-align: left;
 }
 section .strength ul li a {
   color: #ccc;
   text-decoration: none;
 }
 section #main {
-  height: 6000px;
   padding-bottom: 6.8em;
   background: #e1dfcb;
 }
@@ -169,14 +202,21 @@ section #main .pz_center {
   box-shadow: 8px 5px 5px #d3cccc, -8px 0px 5px #d3cccc;
 }
 section #main .pz_center > .item {
-  width: 85em;
-  margin: 0 auto;
+  width: 95%!important;
+  margin: 3em auto;
   text-align: center;
+}
+section #main .pz_center .theme {
+  text-align: center;
+}
+section #main .pz_center .theme .title_line {
+  font: normal normal 42px/42px 'CN Medium';
+  color: red;
 }
 section #main .pz_center .theme .theme_item ul {
   overflow: hidden;
   background: #eeefe4;
-  width: 80%;
+  width: 95%;
   margin: 0 auto;
 }
 section #main .pz_center .theme .theme_item li {
@@ -194,17 +234,22 @@ section #main .pz_center .theme .theme_item li .item:hover {
   box-shadow: 0px 6px 10px rgba(122, 80, 80, 0.5);
 }
 section #main .pz_center .theme .theme_item li img {
-  height: 35.6em;
+  height: 32.6em;
   width: 100%;
 }
 section #main .pz_center .theme .theme_item li div.text {
   height: 5em;
+  color: #fff;
+  text-align: center;
+  line-height: 5em;
+  font: normal 20px/5em;
 }
 section #main .pz_center .moreTheme {
+  width: 100%;
   margin-top: 7.15em;
 }
 section #main .pz_center .moreTheme .video {
-  width: 85em;
+  width: 95%;
   height: 45em;
   margin: 0 auto;
   background: #b3b3b3;
@@ -219,19 +264,40 @@ section #main .pz_center .moreTheme .video img {
   bottom: 0;
   right: 0;
   margin: auto;
+  cursor: pointer;
+  border-radius: 50%;
+}
+section #main .pz_center .moreTheme .video img:hover {
+  background: #dbd1d1;
 }
 section #main .pz_center .moreTheme .video video {
   width: 100%;
+  height: 100%;
 }
 section #main .pz_center .months {
   margin-top: 5em;
   text-align: center;
+  width: 100%;
+}
+section #main .pz_center .months ul {
+  width: 100%!important;
+  overflow: hidden;
 }
 section #main .pz_center .months li {
+  cursor: pointer;
   margin-bottom: 1em;
 }
 section #main .pz_center .months li img {
   width: 100%;
+  position: relative;
+}
+section #main .pz_center .months li img:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #ccc;
+  z-index: 10;
 }
 section #main .pz_center .months li .text {
   text-align: center;
@@ -240,7 +306,13 @@ section #main .pz_center .months li .text {
   line-height: 3em;
   color: #fff;
   font-weight: bolder;
-  font-size: 22px;
+  font-size: 18px;
+}
+section #main .pz_center .months li:hover .text {
+  background: rgba(192, 169, 118, 0.5);
+}
+section #main .pz_center .months li:hover > div {
+  background-color: red;
 }
 section #main .pz_center .months ul {
   margin-bottom: 5em;
@@ -255,16 +327,42 @@ section #main .pz_center .months span.more {
   text-align: center;
   font-size: 18px;
 }
+section #main .pz_center .shops {
+  width: 100%;
+  overflow: hidden;
+}
+section #main .pz_center .shops .landmarks {
+  width: 100%;
+}
 section #main .pz_center .shops .landmarks li {
   height: 7em;
+  line-height: 7em;
   border-bottom: 1px solid #1a1a17;
   border-right: 1px solid #1a1a17;
-  padding: .8em;
   box-sizing: border-box;
+  padding: 0!important;
+  text-align-last: left;
+  text-indent: 1em;
+  position: relative;
+}
+section #main .pz_center .shops .landmarks li img {
+  display: inline-block;
 }
 section #main .pz_center .shops .landmarks li > span {
-  margin-left: 1em;
-  font-size: 18px;
+  font-size: 12px;
+}
+section #main .pz_center .shops .landmarks li:hover:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(27, 126, 192, 0.2);
+  cursor: pointer;
+}
+section #main .pz_center .shops .landmarks li:nth-child(4n) {
+  border-right: none;
 }
 section #main .pz_center .shops .landmarks li:nth-child(9) {
   border-bottom: none;
@@ -279,15 +377,183 @@ section #main .pz_center .shops .landmarks li:nth-child(12) {
   border-bottom: none;
   border-right: none;
 }
+section #main .pz_center .evaluate {
+  width: 100%;
+  overflow: hidden;
+}
+section #main .pz_center .evaluate li:hover {
+  transform: translateY(-0.6em);
+  transition: all .6s;
+  box-shadow: 8px 5px 5px #d3cccc, -8px 0px 5px #d3cccc;
+}
+section #main .pz_center .evaluate li {
+  position: relative;
+  margin-bottom: 2em;
+  border-radius: 1em;
+  overflow: hidden;
+}
+section #main .pz_center .evaluate li .list .head {
+  padding: 0 2em;
+  background: #c0a977;
+  height: 3em;
+  line-height: 3em;
+  color: #fff;
+  text-align-last: left;
+}
+section #main .pz_center .evaluate li .list .head .time {
+  float: right;
+}
+section #main .pz_center .evaluate li .list .content {
+  background: #ece1cb;
+  min-height: 10em;
+  text-align-last: left;
+  padding: 2em;
+  text-indent: 0;
+  box-sizing: border-box;
+}
+section #main .pz_center .evaluate li .list i {
+  position: absolute;
+  border-radius: 50%;
+  bottom: 1em;
+  right: 1em;
+  width: 2em;
+  height: 2em;
+  background: url('../../img/index/btn01.png') no-repeat center / 100% 100%;
+}
+section #main .pz_center .evaluate li .list i:hover {
+  background-color: rgba(155, 57, 57, 0.5);
+  cursor: pointer;
+}
+section #main .pz_center .brand {
+  overflow: hidden;
+}
+section #main .pz_center .brand li {
+  height: 17em;
+  padding: .5em;
+}
+section #main .pz_center .brand li > div {
+  border: 1px solid red;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+section #main .pz_center .brand li > div:hover {
+  background: rgba(241, 222, 222, 0.9);
+}
+section #main .pz_center .brand li > div:hover:before {
+  transform: translateX(0);
+  transition: all .3s;
+}
+section #main .pz_center .brand li > div:before {
+  content: '';
+  position: absolute;
+  height: 3em;
+  line-height: 3em;
+  width: 100%;
+  background: rgba(192, 192, 192, 0.7);
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  color: red;
+}
+section #main .pz_center .brand li video {
+  height: 100%;
+  width: 100%;
+}
+section #main .pz_center .brand li:nth-child(1) > div:hover:before {
+  content: '品牌历程';
+}
+section #main .pz_center .brand li:nth-child(2) > div:hover:before {
+  content: '全国门店';
+}
+section #main .pz_center .brand li:nth-child(3) > div:before {
+  content: '研发团队';
+}
+section #main .pz_center .brand li:nth-child(4) > div:before {
+  content: '拍摄服务';
+}
+section #main .pz_center .brand li:nth-child(5) > div:before {
+  content: '后期工厂';
+}
+section #main .pz_center .brand li:nth-child(6) > div:before {
+  content: '电商团队';
+}
+section #main .pz_center .brand img {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  cursor: pointer;
+  border-radius: 50%;
+}
+section #main .pz_center .brand img:hover {
+  background: #dbd1d1;
+}
+section #main .pz_center .commitment {
+  margin-top: 7em;
+  color: #b59b66;
+}
+section #main .pz_center .commitment .title > p {
+  margin: 1em;
+  font: normal normal 20px/20px 'CN Semibold';
+}
+section #main .pz_center .commitment .title .content {
+  margin-top: 5em;
+  border: 2px solid #b59b66;
+  border-radius: 6px;
+  position: relative;
+  padding: 3em;
+}
+section #main .pz_center .commitment .title .content table {
+  text-align-last: left;
+}
+section #main .pz_center .commitment .title .content table td {
+  width: 33%;
+  padding: .5em;
+  font: normal normal 14px/2em 'CN Semibold';
+}
+section #main .pz_center .commitment .title .content table tr td:nth-child(2) {
+  border-left: 2px solid #9e4040;
+  border-right: 2px solid #9e4040;
+}
+section #main .pz_center .commitment .title .content:before {
+  content: '为了保障您的财物安全，我们只接受以下企业对公收款账户';
+  position: absolute;
+  color: #fff;
+  font: normal normal 20px/3em 'CN Semibold';
+  top: -1.5em;
+  right: 0;
+  margin: auto;
+  left: 0;
+  height: 3em;
+  width: 70%;
+  background: #b59b66;
+  box-sizing: border-box;
+}
+footer {
+  color: #fff;
+  font-size: 14px;
+}
 footer .title {
   height: 4.28em;
   background: #444;
   font-size: 1em;
-}
-footer .title ul {
+  line-height: 4.28em;
   overflow: hidden;
 }
-footer .title ul li {
+footer .title .pz_center.title {
+  overflow: hiddden!important;
+}
+footer .title .pz_center.title ul {
+  margin: 0 !important;
+  height: 100%;
+  overflow: hidden;
+}
+footer .title .pz_center.title ul li {
   display: inline-block;
   height: 4.28em;
   width: 10%;
@@ -296,11 +562,11 @@ footer .title ul li {
   overflow: hidden;
   position: relative;
 }
-footer .title ul li a {
+footer .title .pz_center.title ul li a {
   color: #ccc;
   text-decoration: none;
 }
-footer .title ul li:after {
+footer .title .pz_center.title ul li:after {
   content: '';
   position: absolute;
   left: 0;
@@ -311,23 +577,94 @@ footer .title ul li:after {
   transition: .2s;
   transform: translateX(-100%);
 }
-footer .title ul li:first:after {
+footer .title .pz_center.title ul li:first:after {
   content: '';
   height: 0px;
   background: transparent;
 }
-footer .title ul li:hover:after {
+footer .title .pz_center.title ul li:hover:after {
   left: 0;
   transform: translateX(0);
 }
 footer .content {
   height: 31.78em;
+  padding-top: 5em;
   background: #1a1a1a;
+  box-sizing: border-box;
+}
+footer .content .pz_center .left > p {
+  padding: .5em 1.5em;
+}
+footer .content .pz_center .left .code {
+  margin-top: 1em;
+  text-align: center;
+}
+footer .content .pz_center .left .code img {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+}
+footer .content .pz_center .left .code p {
+  margin-top: 1em;
+  text-align: center;
+}
+footer .content .pz_center .right p.tel {
+  font-size: 40px;
 }
 footer .bottom {
   height: 110px;
   background: #000;
   color: #fff;
   line-height: 110px;
-  font-size: 18px;
+  font-size: 14px;
+}
+body > .contact {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 4em;
+  height: 18em;
+  background: #353535;
+}
+body > .contact ul {
+  height: 100%;
+}
+body > .contact ul li {
+  height: 20%;
+  font-size: 12px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #bdbdbd;
+  border-bottom: 2px solid #505050;
+  cursor: pointer;
+}
+body > .contact ul li div {
+  line-height: 1em;
+}
+body > .contact ul li div a {
+  color: #838383;
+}
+body > .contact ul li:hover {
+  background: #ece7e7;
+}
+body > .contact ul li:before {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 60%;
+  background: url('../../img/index/qq.png') no-repeat center / 40% 70%;
+}
+body > .contact ul li:nth-child(2):before {
+  background: url('../../img/index/tianmao.png') no-repeat center / 40% 70%;
+}
+body > .contact ul li:nth-child(3):before {
+  background: url('../../img/index/weixin.png') no-repeat center / 40% 70%;
+}
+body > .contact ul li:nth-child(4):before {
+  background: url('../../img/index/weibo.png') no-repeat center / 40% 70%;
+}
+body > .contact ul li:nth-child(5):before {
+  background: url('../../img/index/top.png') no-repeat center / 30% 40%;
 }

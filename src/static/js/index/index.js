@@ -1,3 +1,8 @@
 $(function(){
-    console.log(jQuery)
+    // to top
+    $('.contact .toTop').click(function(){
+        $('html, body').animate({
+            scrollTop: 0  
+        }, 600);
+    })
 })
