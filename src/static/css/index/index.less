@@ -5,6 +5,9 @@
 
 
 // gloabal
+html body{
+    font-family: 'CN regular','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 .white{
     color:#fff;
 }
@@ -40,7 +43,7 @@ span.button_c.more{
 a{
     text-decoration: none;
 }
-li>a {
+ul.a_tatal li>a {
     display: inline-block;
     height: 100%;
     width: 100%;
@@ -168,17 +171,29 @@ section{
         color:#fff;
         font-size:14px;
         ul{
-            margin-top: 1.5em;
-            padding: 0 2em;
-            box-sizing: border-box;
+            overflow: hidden;
             li:before{
                 content:'';
                 position: absolute;
                 width: 1px;
                 background: #fff;
                 height: 60%;
-                top:0;
+                top:2em;
                 bottom:0;
+                right: 0;
+            }
+            li:hover:after{
+                transform: translateX(0);
+                transition: all .2s;
+            }
+            li:after{
+                content:'';
+                position: absolute;
+                width: 100%;
+                background: rgba(255, 255, 255,.2);
+                height: 100%;
+                transform: translateX(-100%);
+                top:0;
                 right: 0;
             }
             li:last-child:before{

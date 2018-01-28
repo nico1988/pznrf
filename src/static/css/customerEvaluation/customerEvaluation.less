@@ -1,0 +1,26 @@
+section{
+    .banner{
+        position: relative;
+        overflow: hidden;
+        img{
+            display: inline-block;
+            width: 100%;
+        }
+    }
+    .banner:before{
+        content:'';
+        position:absolute;
+        width: 4.5em;
+        height: 4.5em;
+        border-radius: 50%;
+        bottom: -2em;
+        left: 0;
+        right: 0;
+        margin:auto;
+        background-image:radial-gradient(10px,rgb(206, 206, 184),rgb(145, 185, 145),#e9e8dc);
+        background-color: rgb(248, 245, 245);
+    }
+    .banner:hover:before{
+        background-image:radial-gradient(14px,rgb(206, 206, 184),rgb(145, 185, 145),#e9e8dc);
+    }
+}
