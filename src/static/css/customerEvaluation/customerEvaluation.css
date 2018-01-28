@@ -22,3 +22,6 @@ section .banner:before {
 section .banner:hover:before {
   background-image: radial-gradient(14px, #ceceb8, #91b991, #e9e8dc);
 }
+nav[aria-label] {
+  text-align: center;
+}
