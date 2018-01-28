@@ -35,23 +35,23 @@ body {
   transition: all .6s;
 }
 .login_main .login_part {
-  width: 400px;
-  height: 500px;
+  width: 330px;
+  height: 320px;
   position: absolute;
+  z-index: 10;
   top: 0;
-  bottom: 0;
-  right: 16em;
+  bottom: 2em;
+  right: 10em;
   margin: auto;
   border-radius: 10px;
-  box-shadow: 6px 6px 10px #afafaf, -6px -6px 10px #afafaf;
-  overflow: hidden;
+  box-shadow: 3px 3px 5px #afafaf, -3px -3px 5px #afafaf;
   background: #fff;
 }
 .login_main .login_part .head {
-  height: 80px;
+  height: 50px;
   overflow: hidden;
   background: #ceb370;
-  line-height: 80px;
+  line-height: 50px;
   text-align: center;
   color: #ffffff;
   font-size: 20px;
@@ -67,8 +67,8 @@ body {
 .login_main .login_part .content li {
   position: relative;
   width: 100%;
-  height: 3em;
-  margin: 3em auto;
+  height: 2.5em;
+  margin: 1.5em auto;
   border: 1px solid #da4949;
 }
 .login_main .login_part .content li:hover {
@@ -87,8 +87,8 @@ body {
 .login_main .login_part .content li.icon:before {
   content: '';
   position: absolute;
-  width: 3em;
-  height: 3em;
+  width: 2.5em;
+  height: 2.5em;
   background: url('../../img/login/icon01.png') no-repeat center / 50% 50%;
 }
 .login_main .login_part .content li.icon:nth-child(2):before {
@@ -114,12 +114,14 @@ body {
   background: #ceb370;
   width: 8em;
   left: 15em;
-  letter-spacing: .2em;
+  letter-spacing: .1em;
   color: #fff;
   letter-spacing: .5em;
   line-height: 2.6;
   text-align: center;
   cursor: pointer;
+  font-size: 12px;
+  text-indent: .2em;
 }
 .login_main .login_part .content li.icon input {
   position: absolute;
@@ -145,6 +147,12 @@ body {
   background: -webkit-linear-gradient(top, #c21313, #ddd6c8);
   background: linear-gradient(top, #c21313, #ddd6c8);
   background: #675a38;
+}
+.login_main .login_part .remind {
+  position: absolute;
+  bottom: -7.3em;
+  left: 0;
+  color: #ceb370;
 }
 @media screen and (max-width: 960px) {
   .login_part {

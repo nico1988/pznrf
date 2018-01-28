@@ -1,0 +1,47 @@
+section .banner {
+  position: relative;
+}
+section .banner .text {
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+  position: absolute;
+  bottom: 1em;
+  right: 0;
+  left: 0;
+}
+section .wrapper .imgs {
+  overflow: hidden;
+  padding: 1em;
+}
+section .wrapper .imgs ul {
+  overflow: hidden;
+}
+section .wrapper .imgs li {
+  padding: .2em!important;
+  overflow: hidden;
+  cursor: pointer;
+}
+section .wrapper .imgs li img {
+  margin: 0;
+  width: 100%;
+  height: 250px;
+}
+section .wrapper .imgs li div.text {
+  background: #c0a977;
+  text-align: center;
+  font: normal normal 14px/30px 'CN Regular';
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+section .wrapper .imgs li:hover div.text {
+  background: rgba(192, 169, 119, 0.7);
+}
+section .wrapper .imgs li:hover {
+  transform: translateY(-0.5em);
+  transition: all .5s;
+}
+.pz_center img:hover {
+  transform: translateY(0) !important;
+}

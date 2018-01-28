@@ -8,6 +8,11 @@
 html body{
     font-family: 'CN regular','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.pz_center img:hover{
+    transform: translateY(-.5em);
+    box-shadow: 0 5px 10px silver;
+    transition: all .5s;
+}
 .white{
     color:#fff;
 }
@@ -647,7 +652,7 @@ footer{
         }
         .pz_center .right{
             p.tel{
-                font-size: 40px;
+                font-size: 36px;
             }
         }
     }
@@ -699,5 +704,27 @@ body > .contact{
         li:nth-child(3):before{background: url('../../img/index/weixin.png') no-repeat center/40% 70%;}
         li:nth-child(4):before{background: url('../../img/index/weibo.png') no-repeat center/40% 70%;}
         li:nth-child(5):before{background: url('../../img/index/top.png') no-repeat center/30% 40%;}
+    }
+}
+
+section .pz_center{
+    nav{
+        overflow: hidden;
+        position: relative;
+    }
+    .goto{
+        line-height: 80px;
+        input{
+            display: inline-block;
+            height: 2em;
+            width: 3em;
+            
+        }
+        span{
+            outline: 1px solid #c8c8c8;
+            padding:.4em;
+            cursor: pointer;
+            margin-left:2em;
+        }
     }
 }

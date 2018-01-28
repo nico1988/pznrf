@@ -25,3 +25,21 @@ section .banner:hover:before {
 nav[aria-label] {
   text-align: center;
 }
+section .pz_center nav {
+  overflow: hidden;
+  position: relative;
+}
+section .pz_center .goto {
+  line-height: 80px;
+}
+section .pz_center .goto input {
+  display: inline-block;
+  height: 2em;
+  width: 3em;
+}
+section .pz_center .goto span {
+  outline: 1px solid #c8c8c8;
+  padding: .4em;
+  cursor: pointer;
+  margin-left: 2em;
+}

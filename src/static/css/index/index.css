@@ -1,6 +1,11 @@
 html body {
   font-family: 'CN regular', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.pz_center img:hover {
+  transform: translateY(-0.5em);
+  box-shadow: 0 5px 10px silver;
+  transition: all .5s;
+}
 .white {
   color: #fff;
 }
@@ -624,7 +629,7 @@ footer .content .pz_center .left .code p {
   text-align: center;
 }
 footer .content .pz_center .right p.tel {
-  font-size: 40px;
+  font-size: 36px;
 }
 footer .bottom {
   height: 110px;
@@ -682,4 +687,22 @@ body > .contact ul li:nth-child(4):before {
 }
 body > .contact ul li:nth-child(5):before {
   background: url('../../img/index/top.png') no-repeat center / 30% 40%;
+}
+section .pz_center nav {
+  overflow: hidden;
+  position: relative;
+}
+section .pz_center .goto {
+  line-height: 80px;
+}
+section .pz_center .goto input {
+  display: inline-block;
+  height: 2em;
+  width: 3em;
+}
+section .pz_center .goto span {
+  outline: 1px solid #c8c8c8;
+  padding: .4em;
+  cursor: pointer;
+  margin-left: 2em;
 }
