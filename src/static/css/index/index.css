@@ -159,6 +159,11 @@ section #banner {
   height: 62.15em;
   background: #242424;
 }
+section #banner img {
+  height: 654px;
+  width: 100%;
+  display: inline-block;
+}
 section .strength {
   height: 10.7em;
   background: #c0a977;
